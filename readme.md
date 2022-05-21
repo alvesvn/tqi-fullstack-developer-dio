@@ -10,7 +10,7 @@ Neste repositório você irá encontrar algumas anotações dos 41 cursos dispon
 #### Conteúdo programático: 
 
 - Git e GitHub.
-- Introdução a programação e Pensamento Computacional.   
+- Introdução a programação e pensamento computacional.   
 - HTML.
 - CSS.
 - JavaScript.
