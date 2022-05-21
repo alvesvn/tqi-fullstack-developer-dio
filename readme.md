@@ -5,7 +5,7 @@ O Bootcamp TQI Fullstack Developer é um programa gratuito para formação em de
 <img align="right" src='https://hermes.digitalinnovation.one/tracks/3c8be628-5138-4b63-9cfa-e5313cc03103.png'width="300">
 </center>
 
-Neste repositório você irá encontrar algumas anotações dos 41 cursos disponíveis nesse bootcamp da DIO.
+Neste repositório você irá encontrar algumas anotações dos 41 cursos disponíveis nesse bootcamp da TQI-DIO.
 
 #### Conteúdo programático: 
 
