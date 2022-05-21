@@ -1,4 +1,4 @@
-# Pensamento Computacional - Digital Innovation One. :computer:
+# Pensamento Computacional - Digital Innovation One. 
 
 
 
