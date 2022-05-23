@@ -20,3 +20,6 @@ Neste repositório você irá encontrar algumas anotações do curso.
 - Spring Framework.
 - QA.
 
+#### Referências.
+
+https://www.dio.me/bootcamp/tqi-fullstack-developer
