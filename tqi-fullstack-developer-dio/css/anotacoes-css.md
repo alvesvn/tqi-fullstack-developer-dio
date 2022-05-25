@@ -18,7 +18,7 @@ O *a:hover* do exemplo significa que a âncora também terá essa aparência qua
 
  
 
-## ID x Classe
+# ID x Classe
 
 No exemplo anterior criamos uma regra que altera um elemento HTML diretamente, mas isso significa que todos os elementos <a> ficarão com aquela aparência, e normalmente temos sites mais complexos que precisam de várias regras diferentes para elementos iguais.
 
@@ -48,7 +48,7 @@ No arquivo CSS vamos mudar a cor desses três títulos, e depois alterar o taman
 
  
 
-## Box-model
+# Box-model
 
 Quando estamos criando o layout de um site o navegador representa cada elemento HTML como uma caixa retangular, isso é o box-model. E com CSS nós alteramos a aparência dessa caixa (largura, altura, cor de fundo, etc.). Essa caixa é composta por 4 áreas: o conteúdo, o padding, a borda e a margem.
 
@@ -56,6 +56,8 @@ Quando estamos criando o layout de um site o navegador representa cada elemento 
 - As bordas (border) ;
 - O padding é um espaçamento entre as bordas e o conteúdo, a diferença para as margens é que declarações de imagem de fundo funcionam nele;
 - O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, um vídeo;
+
+![Entendendo como funciona o Box Model e o Box Sizing | Alura](https://www.alura.com.br/artigos/assets/entendendo-como-funciona-box-model-e-o-box-sizing/box-model-no-devtools.png)
 
  
 
@@ -79,11 +81,11 @@ E já que começamos a falar sobre bordas e cor de fundo, no próximo vídeo vam
 
  
 
-## Estilizando elementos
+# Estilizando elementos
 
 Agora que entendemos o box-model podemos focar em deixar nosso site mais bonito, então vamos repassar pelas propriedades já citadas:
 
-### Padding e Margin
+# Padding e Margin
 
 Anteriormente usamos o *padding* e o *margin* da forma mais básica, com apenas um valor, mas eles são mais poderosos que isso. Se quisermos atribuir tamanhos diferentes para cada lado do *box* nós podemos, e vamos ver três formas de fazer isso.
 
@@ -107,9 +109,47 @@ A terceira forma é com as propriedades específicas para cada lado, até agora 
 
 Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
 
+
+
+**Exemplo da aula:** 
+
+**usando propriedade específica para cada lado**.
+
+.post {
+
+padding-top: 15px;
+
+padding-right: 10px;
+
+padding-bottom: 5px; 
+
+padding-left: 0; 
+
+}
+
+**Nesse exemplo temos o 10px para Y e 5px para X.**
+
+10px y superior e inferior - x- esquerdo e direito 5px 
+
+.post {
+
+padding: 10px 5px;
+
+}
+
+**Nesse exemplo um valor para cada lado**.
+
+15- topo 10- direita - 5- inferior 0- esquerdo.
+
+.post {
+
+padding: 15px 10px 5px 0;
+
+}
+
  
 
-### Background
+# Background
 
 A propriedade *background* também é um atalho para várias propriedades, mas isso vocês podem absorver aos poucos, e uma boa opção de leitura é a documentação do MDN.
 
@@ -121,9 +161,33 @@ E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
 
 A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho *background*.
 
+- **Exemplos:**
+
+.post {
+
+background-color: green;
+
+background-image: url;
+
+background-position: top;
+
+}
+
+- **Como mudar a cor de fundo, temos algumas formas:** 
+
+  .post{
+
+  background-color: green;  (PELO NOME)
+
+  background-color: #008800; (POR N exadecimal.)
+
+  background: #008800;
+
+  }
+
  
 
-### Border
+# Border
 
 Vimos que a propriedade *border* pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso.
 
@@ -145,15 +209,69 @@ Aqui temos o mesmo código anterior de duas formas diferentes, a primeira com o 
 
 E depois disso podemos juntar os lados com os aspectos de uma borda e criar uma regra mais específica ainda.
 
- 
-
 Border-radius
 
 E a última propriedade é o *border-radius*, ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mas as mais comuns são os pixels e a porcentagem.
 
 Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no *padding* e *margin* - topo, direita, inferior e esquerda - conseguimos alterar cada canto separadamente.
 
-###  
+
+
+**BORDER - AULA**
+
+- **Largura**: pixel, centímetros, milímetros. 
+- **Cor**: blue, #0000ff...
+- **Estilo**: sólida, pontilhada, tracejada. 
+
+**AULA VIDEO**
+
+- Exemplo: 
+
+.post{
+
+border: 3 px solid;
+
+border-top: 2px dotted;
+
+border-right:  4px dashed;
+
+}
+
+**COMO SEPARAR CADA LADO COM AS PROPRIEDADES:**
+
+border-top: 2px dotted green;
+
+border-right: 4px dashed pink;
+
+border-bottom: 1px solid purple; 
+
+border-left: 4px dotted cyan; 
+
+
+
+**PROPRIEDADE ESPECÍFICA:**
+
+border-width: 3px;
+
+border-color: #0505050;
+
+border-style: solid; 
+
+
+
+# BORDER - RADIUS
+
+- Ele permite que você arredonde os cantos de um elemnto. 
+
+  Mais comum em px e %. 
+
+  Colocando apenas um valor você altera todos os elementos, mas se quiser arredondar separadamente pode usar as propriedades especificas. 
+
+  - Exemplo:
+  - border-radius: 10px; 
+  - border-radius: 50%;
+  - border-radius: 10% 20%;
+  - border-radius: 10% 20% 15% 22% 
 
 ### Exercício
 
@@ -175,7 +293,7 @@ Já sabemos que podemos mudar cor e tamanho de algumas fontes, e agora vamos nos
 
  
 
-### font-family
+### font-family - altera a font do nosso texto.
 
 Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater às fontes seguras, chamadas de web safe fonts.
 
@@ -193,4 +311,123 @@ O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de me
 
 Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor *italic* para ele, mas se precisar tirar o itálico de um texto você pode usar o valor *normal*.
 
- 
+Exemplo: 
+
+#title {
+
+font-family: Verdana;
+
+}
+
+.post_title{
+
+font-Family: Verdana, Arial;
+
+}
+
+### ANOTAÇÕES DA AULA - ALTERAÇÕES NOS TEXTOS.
+
+font-size - altera o tamanho do nosso texto
+
+font-style- altera a aparência do nosso texto.
+
+- Normal: é o padrao.
+
+- Italic: muda a fonte mais inclinada, lembrar se a fonte pode ser aplicada ao italico.
+
+  
+
+font-weight: altera o peso do texto. 
+
+- normal: peso comum da fonte
+
+- bold: negrito
+
+  
+
+text-transoform: transforma o texto em caixa alta e baixa. 
+
+- uppercase: todo texto em caixa alta
+- lowercase: todo texto em caixa baixa
+- capitalize: toda primeira letra de cada palavra em maiscucula. 
+
+
+
+text-decoration: coloca linhas.
+
+- underline; coloca uma linha acima
+- overline; coloca uma linha abaixo
+- line-through: coloca uma linha no meio, riscando uma palavra.
+
+
+
+# Estilizando Listas 
+
+- **Alterando para um quadrado.**
+
+ul {
+
+list-style-type: square;
+
+}
+
+- **Alterando lista ordenada para um algarismo romano**
+
+ol {
+
+list-style-type: upper-roman;
+
+}
+
+- **Alterando para um emoji.**
+
+ul {
+
+list-style-type: "1F44D/"
+
+}
+
+- **Adicionando imagens.**
+
+list-style-image: url("caminhodaimagem.jpg")
+
+
+
+- colocando o none; - vc remove.
+
+
+
+
+
+# DIMENSÃO E ALINHAMENTO 
+
+Para alinhar elementos horizontalmente utilizar o auto; 
+
+Podemos usar pixel ou porcentagem. 
+
+- Width
+- Height
+
+
+
+Largura máxima e altura máxima que o elemento pode ter. 
+
+- Max-wiidth
+- Max-height
+
+- Margin
+
+- Text align
+
+
+
+
+
+# Responda 
+
+- Quais são as áreas do box-model? 
+- Como adicionar imagens em marcadores de lista?
+- Qual é o valor que colocamos na propriedade margin para nos ajudar a alinhar elementos horizontalmente? 
+- Qual destas regras de font?
+
+##### 
