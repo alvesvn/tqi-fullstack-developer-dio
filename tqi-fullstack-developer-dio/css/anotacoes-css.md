@@ -428,6 +428,6 @@ Largura máxima e altura máxima que o elemento pode ter.
 - Quais são as áreas do box-model? 
 - Como adicionar imagens em marcadores de lista?
 - Qual é o valor que colocamos na propriedade margin para nos ajudar a alinhar elementos horizontalmente? 
-- Qual destas regras de font?
+- Qual são as regras de font?
 
 ##### 
